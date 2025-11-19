@@ -316,5 +316,168 @@ button, a{
 }
 
 
+/* =================== Responsive Tweaks =================== */
+
+/* Small devices (phones, <576px) */
+@media (max-width: 575.98px) {
+  
+  /* Hero section */
+  .hero-section-vedio {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    margin-top: 2rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .para-width {
+    font-size: 0.9rem;
+  }
+
+  /* Services cards stacking */
+  .card-box {
+    padding: 3rem 1rem;
+  }
+
+  /* More info section image */
+  .more-info-section .image-section img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  /* Online mode section flex stack */
+  .bussiness-section .d-flex {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .bussiness-section .d-flex img {
+    margin: 0 auto 1rem auto !important;
+  }
+
+  /* Carousel cards smaller */
+  .carousel-inner .card {
+    width: 100% !important;
+    margin-bottom: 2rem;
+  }
+
+  .carousel-indicators {
+    bottom: -30% !important;
+  }
+
+  /* Expert panel cards stacking */
+  .common-section .card {
+    width: 100% !important;
+    margin-bottom: 2rem;
+  }
+
+  /* Contact form */
+  .form-section {
+    width: 90% !important;
+    margin: 2rem auto;
+  }
+}
+
+/* Medium devices (tablets, 576px - 991px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  
+  /* Hero section */
+  .hero-section-vedio {
+    width: 90%;
+    border-radius: 1.5rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .para-width {
+    font-size: 1rem;
+  }
+
+  /* Services cards */
+  .card-box {
+    padding: 4rem 2rem;
+  }
+
+  /* More info section image */
+  .more-info-section .image-section img {
+    width: 80%;
+  }
+
+  /* Online mode section flex adjustments */
+  .bussiness-section .d-flex {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .bussiness-section .d-flex img {
+    margin: 0 1rem 0 0 !important;
+  }
+
+  /* Carousel */
+  .carousel-inner .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Expert panel cards */
+  .common-section .card {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  /* Contact form */
+  .form-section {
+    width: 80%;
+  }
+}
+
+/* Large devices (desktop, >=992px) */
+@media (min-width: 992px) {
+  
+  /* Hero section video */
+  .hero-section-vedio {
+    width: 30rem;
+  }
+
+  /* Services cards */
+  .card-box {
+    padding: 5rem;
+  }
+
+  /* More info section image */
+  .more-info-section .image-section img {
+    width: 70%;
+  }
+
+  /* Online mode flex */
+  .bussiness-section .d-flex img {
+    margin-right: 1rem;
+  }
+
+  /* Carousel cards default */
+  .carousel-inner .card {
+    width: 18rem;
+  }
+
+  /* Expert panel cards default */
+  .common-section .card {
+    width: 18rem;
+  }
+
+  /* Contact form */
+  .form-section {
+    width: 600px;
+  }
+}
+
 
 
