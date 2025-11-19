@@ -1,0 +1,320 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:"urbanist", sans-serif ;
+}
+
+:root {
+  --bs-dark-color: #1a1d20;
+  --bs-dark-primary: #1c1c1c;
+  --bs-main-color:#fff;
+  --bs-primary-color: #c6c6c6;
+  --secondary-color: #29a9fd;
+  --bs-supporting-color: #C850C0;
+}
+
+h1,h2,h3,h4,h5{
+  font-family: 'lexend Deca' , sans-serif;
+  color: var( --bs-dark-color);
+  
+} 
+
+h1{
+  font-size: 3.8rem;
+}
+
+h2{
+  line-height: 3rem;
+  font-weight: 600;
+  font-size: 3.4rem;
+}
+
+p{
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--bs-dark-color);
+  letter-spacing: 0.07rem;
+  line-height: 1.55rem;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+button, a{
+  font-size: 1.15rem !important;
+  letter-spacing: 0.03rem;
+  word-spacing: .1rem;
+}
+
+.commom-heading{
+   font-size: 2.8rem;
+   font-weight: 500;
+   letter-spacing: 0.01rem !important;
+  }
+
+.commom-title {
+    margin-bottom: 4.rem;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: x-large;
+    
+}
+
+.navbar-brand:hover {
+  color: var(--secondary-color) !important;
+}
+
+.navbar-brand.active {
+  color: black !important;
+}
+
+   /* navbar style */
+
+   .nav-link{
+    color: var(--bs-main-color);
+    font-weight: bold;
+   }
+
+   .nav-link:hover{
+      color: var(--secondary-color);
+   }
+
+ /* hero-section-start */
+
+ .hero-section .container{
+      display: grid;
+      place-content: center;
+      height: inherit;
+ }
+
+ .bg-main {
+    height: 80vh;
+    position: relative;
+ }
+
+ .bg-color {
+    background-color: var(--bs-dark-primary);
+ }
+ 
+ .text-light-gray {
+     color: var(--bs-primary-color);
+ } 
+    
+ .common-section{
+     padding: 0 0 9rem 0;
+ }
+
+ 
+.hero-section-vedio {
+    height: auto;
+    width: 30rem;
+    border-radius: 2rem;
+    
+}
+
+.custom-shape-divider-bottom-1751010958 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1751010958 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1751010958 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.services-section{
+  padding: 6rem 0 3rem 0 !important;
+}
+
+.icon-span{
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #1089ff;
+  color: var(--bs-main-color);
+}
+
+.card-box:hover{
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+}
+
+  /* more-info-section style */
+
+  .more-info-section{
+    background-image:linear-gradient(rgba(22, 22, 22, 0.1), rgba(22, 22, 22, 0.9)), url(./images/bg.img.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 6rem 0;
+    overflow: hidden;
+    
+  }
+
+  .more-info-section .image-section{
+    position: relative;
+  }
+
+  .more-info-section .image-section img{
+    width: 70%;
+    
+  }
+
+   /* online mode */
+
+  .bussiness-section {
+     padding-top: 3rem;
+  }
+
+  /* carousal styling */
+
+  .carousel .card{
+    background-color: #262631;
+    color: var(--bs-main-color);
+    transition: all o.3s linear;
+  }
+
+  .carousel-inner .card p{
+    color: var(--bs-primary-color);
+  }
+
+  .carousel-inner .card:hover {
+  background: var(--bs-main-color); /* white */
+  color: #000; /* overall text color black */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+  
+
+  
+.carousel-inner .card:hover h5 {
+  color: var(--bs-dark-color) !important;
+  font-weight: 500;
+}
+
+.carousel-inner .card:hover p {
+  color: #1a1a1a !important;   /* Thoda dark gray - bright lagta hai */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.fa-star{
+  color: var(--bs-supporting-color);
+}
+
+.carousel-indicators{
+  bottom: -20%;
+}
+
+.carousel-indicators [data-bs-target]{
+  width: .7rem;
+  height: .7rem;
+  background-color: var(--secondary-color);
+}
+
+.mavia{
+  background-color: black !important;
+  width: 100%;
+  height: 500px;
+}
+
+.full-width-dark {
+  width: 100vw;
+  margin-left: calc(-1 * (100vw - 100%)/2); /* ✨ removes left shift */
+  padding: 2rem 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+  
+  margin-top: 50px;
+}
+
+/* contact section changing */
+
+.movement {
+  margin-left: -289px;
+}
+
+
+
+
+
+
+/* CSS mein yeh add karein */
+#contact {
+  background-color: #1a1a1a;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 2rem 0;
+}
+
+/* Ya phir yeh alternative solution */
+.full-width-section {
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 2rem 0;
+  margin: 0;
+  
+}
+
+/* Contact section ko full width banane ke liye */
+.contact-section {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background-color: var(--bs-dark-primary);
+    padding: 4rem 0;
+    position: relative;
+}
+
+/* Shape divider ke liye */
+.custom-shape-divider-top-1684211116 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1684211116 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-top-1684211116 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* Form styling */
+.form-section {
+    max-width: 600px;
+    margin-top: 3rem;
+}
+
+
+
+
