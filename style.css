@@ -383,101 +383,129 @@ button, a{
   }
 }
 
-/* Medium devices (tablets, 576px - 991px) */
-@media (min-width: 576px) and (max-width: 991.98px) {
-  
-  /* Hero section */
-  .hero-section-vedio {
-    width: 90%;
-    border-radius: 1.5rem;
+
+
+
+/* -------------------------------------- */
+/* FIX: NAVBAR RESPONSIVE */
+/* -------------------------------------- */
+
+.navbar {
+  background-color: var(--bs-dark-primary) !important;
+  padding: 1rem 0;
+}
+
+.navbar-toggler {
+  border-color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--secondary-color) !important;
+}
+
+
+/* -------------------------------------- */
+/* FIX: HERO SECTION RESPONSIVE */
+/* -------------------------------------- */
+
+.bg-main {
+  min-height: 80vh;
+  height: auto;
+  padding: 4rem 0;
+}
+
+.hero-section .container {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-section-vedio {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 1.5rem;
+}
+
+
+/* Mobile Fixes */
+@media (max-width: 768px) {
+  .hero-section .container {
+    flex-direction: column !important;
+    text-align: center;
   }
 
   .hero-section h1 {
-    font-size: 2.5rem;
-    line-height: 3rem;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
   }
 
-  .para-width {
-    font-size: 1rem;
-  }
-
-  /* Services cards */
-  .card-box {
-    padding: 4rem 2rem;
-  }
-
-  /* More info section image */
-  .more-info-section .image-section img {
-    width: 80%;
-  }
-
-  /* Online mode section flex adjustments */
-  .bussiness-section .d-flex {
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-  }
-
-  .bussiness-section .d-flex img {
-    margin: 0 1rem 0 0 !important;
-  }
-
-  /* Carousel */
-  .carousel-inner .card {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  /* Expert panel cards */
-  .common-section .card {
-    width: 90%;
-    margin: 1rem auto;
-  }
-
-  /* Contact form */
-  .form-section {
-    width: 80%;
-  }
-}
-
-/* Large devices (desktop, >=992px) */
-@media (min-width: 992px) {
-  
-  /* Hero section video */
   .hero-section-vedio {
-    width: 30rem;
-  }
-
-  /* Services cards */
-  .card-box {
-    padding: 5rem;
-  }
-
-  /* More info section image */
-  .more-info-section .image-section img {
-    width: 70%;
-  }
-
-  /* Online mode flex */
-  .bussiness-section .d-flex img {
-    margin-right: 1rem;
-  }
-
-  /* Carousel cards default */
-  .carousel-inner .card {
-    width: 18rem;
-  }
-
-  /* Expert panel cards default */
-  .common-section .card {
-    width: 18rem;
-  }
-
-  /* Contact form */
-  .form-section {
-    width: 600px;
+    margin-top: 2rem;
+    max-width: 100%;
   }
 }
+
+
+
+@media (min-width: 786px) and (max-width: 992px) {
+
+  /* Container center */
+  .hero-section .container {
+    flex-direction: column !important;
+    text-align: center;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  /* Text + Button center */
+  .hero-section .container > div {
+    text-align: center !important;
+  }
+
+  .hero-section a.btn,
+  .hero-section button.btn {
+    display: inline-block !important;
+    margin: 0 auto !important;
+  }
+}
+
+  .hero-section-vedio {
+    margin-top: 2rem;
+  }
+
+
+
+
+/* Mobile: Hero video spacing fix */
+@media (max-width: 786px) {
+  .bg-main {
+    padding-bottom: 4rem !important;
+  }
+
+  .hero-section-vedio {
+    margin-bottom: 2rem;
+  }
+}
+
+
+/* Mobile: Contact section wave overlap fix */
+@media (max-width: 786px) {
+  .contact-section {
+    padding-top: 5rem !important;
+  }
+}
+
 
 
 
