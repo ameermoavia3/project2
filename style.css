@@ -82,22 +82,11 @@ button, a{
 
    /* navbar style */
 
-   .nav-link{
-    color: var(--bs-main-color);
-    font-weight: bold;
-   }
-
    .nav-link:hover{
       color: var(--secondary-color);
    }
 
- /* hero-section-start */
 
- .hero-section .container{
-      display: grid;
-      place-content: center;
-      height: inherit;
- }
 
  .bg-main {
     height: 80vh;
@@ -117,12 +106,7 @@ button, a{
  }
 
  
-.hero-section-vedio {
-    height: auto;
-    width: 30rem;
-    border-radius: 2rem;
-    
-}
+
 
 .custom-shape-divider-bottom-1751010958 {
     position: absolute;
@@ -262,22 +246,7 @@ button, a{
 
 
 
-/* CSS mein yeh add karein */
-#contact {
-  background-color: #1a1a1a;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  padding: 2rem 0;
-}
 
-/* Ya phir yeh alternative solution */
-.full-width-section {
-  width: 100%;
-  background-color: #1a1a1a;
-  padding: 2rem 0;
-  margin: 0;
-  
-}
 
 /* Contact section ko full width banane ke liye */
 .contact-section {
